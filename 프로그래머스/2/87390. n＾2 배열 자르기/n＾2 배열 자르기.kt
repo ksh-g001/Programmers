@@ -6,8 +6,8 @@ class Solution {
         val array = mutableListOf<Int>()
 
         for (cnt in  left..right){
-            val quotient = (cnt)/n
-            val remainder = (cnt)%n
+            val quotient = cnt/n
+            val remainder = cnt%n
             val e = max(quotient, remainder)
             array.add(e.toInt()+1)
         }
