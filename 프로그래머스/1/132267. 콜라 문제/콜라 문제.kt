@@ -8,7 +8,6 @@ class Solution {
             new = (remain/a) *b
             answer +=new
             remain = new + (remain%a)
-            println("answer : $answer\tremain : $remain")
         }
         return answer
     }
