@@ -5,7 +5,7 @@ fun solution(progresses: IntArray, speeds: IntArray): IntArray {
     val deployDays = mutableListOf<Int>()
     for (i in progresses.indices) {
         val remain = 100 - progresses[i]
-        val day = (remain + speeds[i] - 1) / speeds[i]   // 올림 나눗셈
+        val day = (remain + speeds[i] - 1) / speeds[i]
         deployDays.add(day)
     }
 
@@ -23,7 +23,7 @@ fun solution(progresses: IntArray, speeds: IntArray): IntArray {
             previous = day
         }
     }
-    result.add(cnt) // 마지막 묶음 추가
+    result.add(cnt)
 
     return result.toIntArray()
 }
